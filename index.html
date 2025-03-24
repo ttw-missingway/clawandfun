@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function detectDevice() {
+            const width = window.innerWidth;
+            if (width <= 768) {
+                window.location.href = './Pages/mobile/home/index.html';
+            } else if (width <= 1024) {
+                window.location.href = './Pages/tablet/home/index.html';
+            } else {
+                window.location.href = './Pages/desktop/home/index.html';
+            }
+        }
+        window.onload = detectDevice;
+    </script>
+    <title>Claw & Fun | Katy, TX</title>
+</head>
+<body>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=./Pages/desktop/home/index.html">
+    </noscript>
+</body>
+</html>
